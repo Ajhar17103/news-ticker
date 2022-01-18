@@ -1,4 +1,6 @@
 #stylesheet
+
+
 .news-area{
   width: 100%;
   overflow: hidden;
@@ -35,6 +37,10 @@
 
 
 #code
+
+
+
+
 <div className='headline'>International</div>
         <div className='news-area'>
           <div className='tickers'>
