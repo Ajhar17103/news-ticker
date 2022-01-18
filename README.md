@@ -1,22 +1,32 @@
 #stylesheet
 
 
-.news-area{
+.headline{
+  position: absolute;
+  background: #009688;
+  color:#fff;
+  font-size: 27px;
+  font-family: sans-serif;
+  z-index: 9999;
+  padding: 9px 25px 8px 15px;
+}
+.news-areas{
   width: 100%;
   overflow: hidden;
   
 }
 .tickers{
   width: 100%;
-  background: #3b3b3b3d;
+  padding-left: 0;
+  background: #2a8853;
 }
-.ticker-animation{
+.ticker-animations{
   display:flex;
   white-space: nowrap;
   padding-right: 100%;
   animation: ticker 20s linear infinite;
 }
-.ticker-animation:hover{
+.ticker-animations:hover{
  animation-play-state: paused;
 }
 @keyframes ticker{
@@ -27,13 +37,12 @@
     transform: translate3d(-100%,0,0);
   }
 }
-.ticker-item{
+.ticker-items{
  
-  padding:5px 2px;
-  font-size: 15px;
-  color: rgb(255, 255, 255) ;
+  padding:10px 0;
+  font-size: 25px;
+  color: black ;
 }
-
 
 
 #code
@@ -41,21 +50,23 @@
 
 
 
-<div className='headline'>International</div>
-        <div className='news-area'>
+ <>
+        <div className='headline'>International</div>
+        <div className='news-areas'>
           <div className='tickers'>
-            <div className='ticker-animation'>
+            <div className='ticker-animations'>
 
-             <div className='ticker-item'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
+             <div className='ticker-items'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
 
-             <div className='ticker-item'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
+             <div className='ticker-items'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
 
-             <div className='ticker-item'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
+             <div className='ticker-items'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
 
-             <div className='ticker-item'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
+             <div className='ticker-items'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
 
-             <div className='ticker-item'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
+             <div className='ticker-items'> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <span>||</span></div>
             
             </div>
           </div>
         </div>
+        </>
